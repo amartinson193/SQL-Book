@@ -11,9 +11,9 @@ navbar:
         - text: "SQL Server"
           href: SQL-Server.html
     - text: "Models"
-      href: "3 - Models/Models.html"
+      href: "../3 - Models/Models.html"
     - text: "Articles/Projects"
-      href: "2 - Articles/ArticlesProjects.html"
+      href: "../2 - Articles/ArticlesProjects.html"
 
 
       
