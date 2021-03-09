@@ -1,0 +1,20 @@
+name: "SQL-Book"
+navbar:
+  title: "My SQL Book"
+  left:
+    - text: "Home"
+      href: "../index.html"
+    - text: "Package Glossary"
+      menu:
+        - text: "Oracle SQL"
+          href: "../1 - Package Glossary/Oracle-SQL.html"
+        - text: "SQL Server"
+          href: "../1 - Package Glossary/SQL-Server.html"
+    - text: "Models"
+      href: "../3 - Models/Models.html"
+    - text: "Articles/Projects"
+      href: "ArticlesProjects.html"
+
+
+      
+output_dir: '.'

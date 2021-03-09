@@ -1,0 +1,69 @@
+---
+title: "Oracle SQL"
+output: 
+  html_document: 
+    theme: cerulean
+---
+
+# Functions
+
+## C
+
+<details> --------------------------------------------
+<summary>convert</summary>
+     
+CONVERT ( data_type [ ( length ) ] , expression [ , style ] ) 	
+[Docs](https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver15)		
+	
+**Notes**
+* Use this instead of to_date in oracle SQL
+	
+</details>
+	 
+## D
+
+<details> --------------------------------------------
+<summary>dateadd</summary>
+     
+DATEADD (datepart , number , date ) 	
+[Docs](https://docs.microsoft.com/en-us/sql/t-sql/functions/dateadd-transact-sql?view=sql-server-ver15)		
+	
+**Notes**
+* Here is how you truncate the month
+```
+select dateadd(month, datediff(month, 0, getdate()),0)
+```
+	* This works because it finds the difference in months from 0 (1900/1/1) and adds back that same amount of months
+	
+</details>
+
+<details> --------------------------------------------
+<summary>datediff</summary>
+     
+DATEDIFF ( datepart , startdate , enddate )  	
+[Docs](https://docs.microsoft.com/en-us/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver15)	
+	
+</details>
+
+## S
+
+<details> --------------------------------------------
+<summary>stuff</summary>
+	
+STUFF ( character_expression , start , length , replaceWith_expression )  
+[Docs](https://docs.microsoft.com/en-us/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver15)
+
+**Notes**
+* Listagg equivalent in SQL Server is the following:
+	* Turn this into an article: 
+		* https://stackoverflow.com/questions/31211506/how-stuff-and-for-xml-path-work-in-sql-server
+		* https://stackoverflow.com/questions/15477743/listagg-in-sqlserver
+</details>
+
+
+
+
+
+
+
+
